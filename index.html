@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conscientização e Suporte - TEA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Conscientização e Suporte - TEA</h1>
+        <p>Aviso: Este questionário é apenas um exercício de lógica e não substitui avaliação médica.</p>
+    </header>
+
+    <main>
+        <section id="wiki-section" style="background: #fff3cd; padding: 15px; border-radius: 5px; margin-bottom: 20px;">
+            <h2>O que é o TEA? (Segundo a Wikipedia)</h2>
+            <p id="wiki-texto">Carregando informações da API...</p>
+        </section>
+
+        <section id="quiz-section">
+            <h2>Questionário de Rastreio (Ilustrativo)</h2>
+            <form id="quiz-form">
+                <div class="question">
+                    <p>1. Como a criança lida com mudanças inesperadas na rotina?</p>
+                    <label><input type="radio" name="q1" value="0" required> Adapta-se facilmente.</label><br>
+                    <label><input type="radio" name="q1" value="1"> Fica incomodada, mas com ajuda supera.</label><br>
+                    <label><input type="radio" name="q1" value="2"> Apresenta muita resistência e angústia.</label><br>
+                    <label><input type="radio" name="q1" value="3"> Entra em crise extrema e incontrolável.</label>
+                </div>
+                
+                <div class="question">
+                    <p>2. Como é a comunicação verbal e não verbal?</p>
+                    <label><input type="radio" name="q2" value="0" required> Comunica-se claramente e mantém contato visual.</label><br>
+                    <label><input type="radio" name="q2" value="1"> Fala bem, mas tem dificuldade em manter a conversa ou contato visual prolongado.</label><br>
+                    <label><input type="radio" name="q2" value="2"> Usa frases curtas, comunicação restrita e evita contato visual.</label><br>
+                    <label><input type="radio" name="q2" value="3"> Ausência de fala funcional, comunicação não verbal muito limitada.</label>
+                </div>
+
+                <div class="question">
+                    <p>3. Existem comportamentos repetitivos ou interesses restritos?</p>
+                    <label><input type="radio" name="q3" value="0" required> Não há comportamentos evidentes desse tipo.</label><br>
+                    <label><input type="radio" name="q3" value="1"> Possui interesses fortes, mas consegue focar em outras coisas.</label><br>
+                    <label><input type="radio" name="q3" value="2"> Comportamentos repetitivos frequentes que interferem no dia a dia.</label><br>
+                    <label><input type="radio" name="q3" value="3"> Foco extremo e inflexível, movimentos estereotipados intensos.</label>
+                </div>
+
+                <button type="submit" id="btn-submit">Ver Resultado</button>
+            </form>
+            <div id="resultado" class="hidden"></div>
+        </section>
+
+        <section id="tables-section">
+            <h2>Agendas de Atividades e Cuidados</h2>
+            
+            <h3>Nível 1 (Suporte Leve)</h3>
+            <table>
+                <tr><th>Área</th><th>Cuidados e Atividades</th></tr>
+                <tr><td>Rotina</td><td>Uso de agendas visuais simples; antecipação verbal de mudanças.</td></tr>
+                <tr><td>Social</td><td>Treinamento de habilidades sociais, grupos de apoio, mediação escolar.</td></tr>
+                <tr><td>Terapias</td><td>Terapia Cognitivo-Comportamental (TCC) conforme necessidade, fonoaudiologia ocasional.</td></tr>
+            </table>
+
+            <h3>Nível 2 (Suporte Substancial)</h3>
+            <table>
+                <tr><th>Área</th><th>Cuidados e Atividades</th></tr>
+                <tr><td>Rotina</td><td>Rotina altamente estruturada, uso de temporizadores para transições.</td></tr>
+                <tr><td>Social/Comunicação</td><td>Terapia intensiva da fala, estímulo ao brincar funcional.</td></tr>
+                <tr><td>Terapias</td><td>Terapia Ocupacional para integração sensorial, Intervenção precoce baseada em evidências (ex: Denver/ABA).</td></tr>
+            </table>
+
+            <h3>Nível 3 (Suporte Muito Substancial)</h3>
+            <table>
+                <tr><th>Área</th><th>Cuidados e Atividades</th></tr>
+                <tr><td>Rotina</td><td>Ambiente adaptado para segurança, suporte contínuo para atividades diárias (comer, vestir).</td></tr>
+                <tr><td>Social/Comunicação</td><td>Comunicação Alternativa e Aumentativa (CAA - ex: PECS), foco em comunicação básica.</td></tr>
+                <tr><td>Terapias</td><td>Terapia intensiva diária, suporte psiquiátrico, integração sensorial profunda.</td></tr>
+            </table>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
